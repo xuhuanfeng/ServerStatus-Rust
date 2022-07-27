@@ -6,7 +6,7 @@ offline_threshold = 30
 
 # 管理员账号,不设置默认随机生成，用于查看 /detail, /map
 admin_user = "admin"
-admin_pass = "adminadmin"
+admin_pass = "PWD"
 
 # hosts 跟 hosts_group 两种配置模式任挑一种配置即可
 # name 主机唯一标识，不可重复，alias 为展示名
