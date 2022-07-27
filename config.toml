@@ -5,8 +5,8 @@ http_addr = "0.0.0.0:8080"
 offline_threshold = 30
 
 # 管理员账号,不设置默认随机生成，用于查看 /detail, /map
-admin_user = ""
-admin_pass = ""
+admin_user = "admin"
+admin_pass = "adminadmin"
 
 # hosts 跟 hosts_group 两种配置模式任挑一种配置即可
 # name 主机唯一标识，不可重复，alias 为展示名
@@ -15,10 +15,7 @@ admin_pass = ""
 # monthstart = 1 没启用vnstat时，表示月流量从每月哪天开始统计
 # disabled = true 单机禁用，跟删除这条配置的效果一样
 hosts = [
-  {name = "h1", password = "p1", alias = "n1", location = "🏠", type = "kvm"},
-  {name = "h2", password = "p2", alias = "n2", location = "🏢", type = "kvm", disabled = false},
-  {name = "h3", password = "p3", alias = "n3", location = "🏡", type = "kvm", monthstart = 1},
-  {name = "h4", password = "p4", alias = "n4", location = "🏡", type = "kvm", notify = true},
+  {name = "hz", password = "hz", alias = "hz", location = "🏠", type = "hz"}
 ]
 
 # 动态注册模式，不再需要针对每一个主机做单独配置
@@ -35,7 +32,7 @@ group_gc = 30
 
 # !!! 一键部署如果没问题则不需要动，Server 会自行根据你的域名生成 server_url
 # 修正一键部署，请自行替换 ssr.rs 为你的域名,
-# server_url = "https://ssr.rs/report"
+# server_url = "http://ssr.rs/report"
 # stat_client 默认安装的路径
 workspace = "/opt/ServerStatus"
 
